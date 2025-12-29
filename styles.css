@@ -138,8 +138,53 @@ li:not(:last-child) {
 }
 
 .numbered-list {
+    padding-left: 26px;
+
     li::marker {
         font-weight: 700;
         color: var(--accent-brown);
     }
+
+    li {
+        padding-left: 16px
+    }
+}
+
+hr {
+    border: 1px solid var(--border-color);
+}
+
+.nutrition-description {
+    margin-bottom: 24px;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+th, td {
+    padding: 12px 0;
+    text-align: left;
+}
+
+tr:last-child th,
+tr:last-child td {
+    padding-bottom: 0;
+}
+
+th {
+    font-weight: 400;
+    padding-left: 32px;
+}
+
+td {
+    font-weight: 700;
+    padding-left: 16px;
+    padding-right: 32px;
+    color: var(--accent-brown);
 }
