@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Young Serif";
+    src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+:root {
+    --bg-page: hsl(30, 54%, 90%);
+    --bg-card: hsl(0, 0%, 100%);
+    --bg-prep: hsl(330, 100%, 98%);
+
+    --text-heading: hsl(24, 5%, 18%);
+    --text-body: hsl(30, 10%, 34%);
+
+    --accent-rose: hsl(332, 51%, 32%);
+    --accent-brown: hsl(14, 45%, 36%);
+
+    --border-color: hsl(30, 18%, 87%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--bg-page);
+    color: var(--text-body);
+}
