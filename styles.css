@@ -45,3 +45,41 @@ body {
     background-color: var(--bg-page);
     color: var(--text-body);
 }
+
+main {
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 128px 76px;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding: 40px 32px;
+    background-color: var(--bg-card);
+
+    @media (min-width: 768px) {
+        max-width: 736px;
+        border-radius: 24px;
+    }
+}
+
+.recipe-image {
+    margin-left: -32px;
+    margin-top: -40px;
+    max-width: none;
+    width: calc(100% + 64px);
+
+    @media (min-width: 768px) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 12px;
+    }
+}
