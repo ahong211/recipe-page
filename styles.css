@@ -122,6 +122,27 @@ main {
 
 .bulleted-list {
     list-style-type: none;
+    padding-left: 8px;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+    li::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        display: block;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background-color: var(--accent-brown);
+    }
+}
+
+.prep-container .bulleted-list li::before {
+    background-color: var(--accent-rose);
 }
 
 li:not(:last-child) {
@@ -140,14 +161,15 @@ li:not(:last-child) {
 .numbered-list {
     padding-left: 26px;
 
+    li {
+        padding-left: 16px
+    }
+
     li::marker {
         font-weight: 700;
         color: var(--accent-brown);
     }
 
-    li {
-        padding-left: 16px
-    }
 }
 
 hr {
