@@ -64,6 +64,7 @@ main {
     flex-direction: column;
     gap: 40px;
     width: 100%;
+    min-width: 375px;
     padding: 40px 32px;
     background-color: var(--bg-card);
 
@@ -169,7 +170,6 @@ li:not(:last-child) {
         font-weight: 700;
         color: var(--accent-brown);
     }
-
 }
 
 hr {
