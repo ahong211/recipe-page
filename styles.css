@@ -69,6 +69,7 @@ main {
     background-color: var(--bg-card);
 
     @media (min-width: 768px) {
+        padding: 40px;
         max-width: 736px;
         border-radius: 24px;
     }
